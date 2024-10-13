@@ -61,21 +61,21 @@ def build_chroma(data_path: Path, chroma_path: Path, overwrite: bool = False) ->
 
         save_to_chroma(documents, chroma_path)
 
-def query_embeddings(chroma_path: Path, query: str, top_k: int=5):
+def query_embeddings(chroma_path: Path, query: str, top_k: int=5, threshold: float=0.8) -> list[Document]:
     db = Chroma(persist_directory=str(chroma_path), embedding_function=OpenAIEmbeddings())
         
     # Retrieving the context from the DB using similarity search
     relevant_documents = db.similarity_search_with_relevance_scores(query, k=top_k)
 
-    for doc, score in relevant_documents:
-        print(doc.page_content)
-        print(f"Confidence score = {score}")
-
-        print("="*80)
+    return [doc for doc, score in relevant_documents if score >= threshold]
 
 
 if __name__ == "__main__":
     build_chroma(data_path=conf.DATA_PATH, chroma_path=conf.CHROMA_PATH, overwrite=False)
 
-    query_embeddings(conf.CHROMA_PATH, "What is actually ketogenic diet and how it can help me?")
+    relevant_documents = query_embeddings(conf.CHROMA_PATH, "What is actually ketogenic diet and how it can help me?")
+
+    for doc in relevant_documents:
+        print(doc.page_content)
+        print("="*80)
 
