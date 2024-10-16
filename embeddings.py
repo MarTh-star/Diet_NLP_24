@@ -29,7 +29,7 @@ def load_documents(data_path: Path) -> list[Document]:
 
             for _, row in df.iterrows():
                 doc = Document(
-                    page_content=row["chunk_text"], metadata={"source": f"{row["chunk_id"]}_{row["chunk_label"]}"}
+                    page_content=row['chunk_text'], metadata={'source': f"{row['chunk_id']}_{row['chunk_label']}"}
                 )
                 docs.append(doc)
 
@@ -73,7 +73,7 @@ def query_embeddings(chroma_path: Path, query: str, top_k: int=5, threshold: flo
 if __name__ == "__main__":
     build_chroma(data_path=conf.DATA_PATH, chroma_path=conf.CHROMA_PATH, overwrite=False)
 
-    relevant_documents = query_embeddings(conf.CHROMA_PATH, "What is actually ketogenic diet and how it can help me?")
+   # relevant_documents = query_embeddings(conf.CHROMA_PATH, "What is actually ketogenic diet and how it can help me?")
 
     for doc in relevant_documents:
         print(doc.page_content)
