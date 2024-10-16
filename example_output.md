@@ -1,0 +1,5 @@
+| Foods to Increase Consumption Of | Foods to Eat in Moderation | Foods to Avoid       | (For Intermittent Fasting) Eating Time Window | Duration (weeks) | Macros: Percent of Fat | Percent of Protein | Percent of Carbs |
+|----------------------------------|---------------------------|----------------------|------------------------------------------------|------------------|-----------------------|-------------------|------------------|
+| Vegetables (leafy greens, broccoli) | Whole grains (brown rice, quinoa) | Sugary snacks        | 12 PM - 8 PM                                   | 4                | 30%                   | 30%               | 40%              |
+| Fruits (berries, apples)         | Nuts and seeds            | Processed foods      |                                                |                  |                       |                   |                  |
+| Lean proteins (chicken, fish)    | Dairy (low-fat options)   | High-calorie dressings |                                                |                  |                       |                   |                  |

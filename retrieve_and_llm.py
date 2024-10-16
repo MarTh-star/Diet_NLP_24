@@ -1,11 +1,13 @@
 from langchain_openai import ChatOpenAI
-from embeddings import query_embeddings
+from embeddingsv2 import query_embeddings
+from langchain_chroma import Chroma
+from langchain_core.prompts import ChatPromptTemplate
 import conf
 import getpass
 import os
 
 query_text = "I am a 30 year old woman with a bmi of 21.9, I have no dietary preferences and I am trying to lose weight."
-columns = ["Foods to increase consumption of", "Foods to eat in moderation", "Foods to avoid", "(For intermittent fasting) Eating time window", "Duration (numeric - in weeks) (for intermittent fasting)", "Macros: Percent of Fat, Percent of Protein, Percent of Carbs"]
+columns = "Foods to increase consumption of, Foods to eat in moderation, Foods to avoid, (For intermittent fasting) Eating time window, Duration (numeric - in weeks) (for intermittent fasting), Macros: Percent of Fat, Percent of Protein, Percent of Carbs"
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
@@ -13,7 +15,7 @@ Answer the question based only on the following context:
  - -
 Answer the question based on the above context: {question}
  - -
-The answer should be in the form of a table that have the following columns:{columns}
+The answer should be in the form of a csv table that have the following columns: {columns}
 """
 
 def query_rag(query_text):
@@ -27,7 +29,7 @@ def query_rag(query_text):
 
     # Create prompt template using context and query text
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
-    prompt = prompt_template.format(context=context_text, question=query_text)
+    prompt = prompt_template.format(context=context_text, question=query_text, columns=columns)
   
     # Initialize OpenAI chat model
     model = ChatOpenAI(model="gpt-4o-mini")
