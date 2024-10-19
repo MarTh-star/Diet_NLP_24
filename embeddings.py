@@ -70,8 +70,7 @@ def build_chroma(data_path: Path, chroma_path: Path, overwrite: bool = False) ->
         save_to_chroma(documents, chroma_path)
 
 def query_embeddings(chroma_path: Path, query: str, top_k: int=5, threshold: float=0.75) -> list[Document]:
-    print("retrieving data")
-    print("Query is: " + query)
+    
     db = Chroma(persist_directory=str(chroma_path), embedding_function=OpenAIEmbeddings())
     
 

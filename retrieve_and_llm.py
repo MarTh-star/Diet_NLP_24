@@ -8,9 +8,9 @@ import os
 import re
 
 # query_text = "30 years old, gender woman, bmi 21.9, lose weight."
-query_text = "I am a 30 year old man, with a bmi of 21.9 trying to gain weight."
+query_text = "30-35 year old man, bmi of 29 trying to lose weight, using ketogenic diet."
 # columns = "Foods to increase consumption of, Foods to eat in moderation, Foods to avoid, (For intermittent fasting) Eating time window, Duration (numeric - in weeks) (for intermittent fasting), Macros: Percent of Fat, Percent of Protein, Percent of Carbs"
-columns = "Foods to increase consumption of, Foods to eat in moderation, Foods to avoid, Macros: Percent of Fat, Percent of Protein, Percent of Carbs"
+columns = "Age range, Gender, Lose/Gain Weight, Diet, Pre-Condition, Foods to increase consumption of, Foods to eat in moderation, Foods to avoid, Macros: Percent of Fat, Percent of Protein, Percent of Carbs"
 
 
 PROMPT_TEMPLATE = """
@@ -19,10 +19,10 @@ You are an expert on diets, give dietary adviced based only on this context:
  - -
 Give dietary advice based on the above context: {question}
  - -
-The advice should be in the form of a csv that is delimited with a semi-colon table that have the following columns: {columns}
-Chose one diet out of dash, intermittent fasting, ketogenic, mediterranean or nordic diet and if intermittent fasting is recommended give the time window and duration of the fasting.
-Write the percentage of macros, fat and carbs only once.
-List the metadata of the context text and which diet was chosen.
+The advice should be only in the form of a csv that is delimited with a semi-colon table that have the following columns: {columns}
+Give general as well as specific examples of the foods to increase, eat in moderation and to avoid, put each example in a different row.
+Write the gender, age range, lose/gain weight, diet and percentage of macros, fat and carbs only in one row.
+List the metadata of the context text.
 """
 
 def query_rag(query_text):
@@ -38,14 +38,12 @@ def query_rag(query_text):
     context_text = "\n\n - -\n\n".join(
     [f"{doc.page_content} | Metadata: {doc.metadata}" for doc, _score in results])
 
-    print(context_text)
-
     # Create prompt template using context and query text
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
     prompt = prompt_template.format(context=context_text, question=query_text, columns=columns)
   
     # Initialize OpenAI chat model
-    model = ChatOpenAI(model="gpt-4o-mini")
+    model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
     # Generate response text based on the prompt
     response_text = model.predict(prompt)
