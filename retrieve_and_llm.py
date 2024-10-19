@@ -7,9 +7,8 @@ import getpass
 import os
 import re
 
-# query_text = "30 years old, gender woman, bmi 21.9, lose weight."
-query_text = "30-35 year old man, bmi of 29 trying to lose weight, using ketogenic diet."
-# columns = "Foods to increase consumption of, Foods to eat in moderation, Foods to avoid, (For intermittent fasting) Eating time window, Duration (numeric - in weeks) (for intermittent fasting), Macros: Percent of Fat, Percent of Protein, Percent of Carbs"
+query_text = "30-35 year old man, bmi of 29 trying to lose weight, using DASH diet."
+
 columns = "Age range, Gender, Lose/Gain Weight, Diet, Pre-Condition, Foods to increase consumption of, Foods to eat in moderation, Foods to avoid, Macros: Percent of Fat, Percent of Protein, Percent of Carbs"
 
 
@@ -19,9 +18,9 @@ You are an expert on diets, give dietary adviced based only on this context:
  - -
 Give dietary advice based on the above context: {question}
  - -
-The advice should be only in the form of a csv that is delimited with a semi-colon table that have the following columns: {columns}
+The advice should be only in the form of a csv delimited with a semi-colon table that can be copied into excel, and that have the following columns: {columns}
 Give general as well as specific examples of the foods to increase, eat in moderation and to avoid, put each example in a different row.
-Write the gender, age range, lose/gain weight, diet and percentage of macros, fat and carbs only in one row.
+Write the gender, age range, lose/gain weight, diet and percentage of macros, fat and carbs only once.
 List the metadata of the context text.
 """
 
@@ -46,9 +45,9 @@ def query_rag(query_text):
     model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
     # Generate response text based on the prompt
-    response_text = model.predict(prompt)
+    response_text = model.invoke(prompt)
 
-    return response_text
+    return response_text.content
 
 if __name__ == "__main__":
     build_chroma(data_path=conf.DATA_PATH, chroma_path=conf.CHROMA_PATH, overwrite=False)
