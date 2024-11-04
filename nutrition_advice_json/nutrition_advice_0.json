@@ -1,0 +1,100 @@
+{
+    "Age range": [
+        {
+            "Age range": "18-25 years",
+            "source": "pre-filled"
+        }
+    ],
+    "Gender": [
+        {
+            "Gender": "Female",
+            "source": "pre-filled"
+        }
+    ],
+    "Lose/maintain/gain weight": [
+        {
+            "Lose/maintain/gain weight": "Gain weight",
+            "source": "pre-filled"
+        }
+    ],
+    "Diet name": [
+        {
+            "Diet name": "dash diet",
+            "source": "pre-filled"
+        }
+    ],
+    "Health Pre-Condition": [
+        {
+            "Health Pre-Condition": "Underweight",
+            "source": "pre-filled"
+        }
+    ],
+    "Foods to increase consumption of": [
+        {
+            "Foods to increase consumption of": "Whole grains",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        },
+        {
+            "Foods to increase consumption of": "Fruits",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        },
+        {
+            "Foods to increase consumption of": "Vegetables",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        },
+        {
+            "Foods to increase consumption of": "Nuts",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        },
+        {
+            "Foods to increase consumption of": "Legumes",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        },
+        {
+            "Foods to increase consumption of": "Low-fat dairy products",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        }
+    ],
+    "Foods to eat in moderation": [
+        {
+            "Foods to eat in moderation": "Red meat",
+            "source": "diet_data/dash diet/30977404.csv_methods3 (content: ['7', 'methods3', ' For each food item, 4 possible frequencies (never, every month, every week and every day) and the amount of consumption each time in grams or millilitres were available. The daily intakes of energy (kcal/d) and key nutrients from each food were calculated according to the Chinese Food Composition Tables25.  Assessment of adherence to a dietary approaches to stop hypertension-style diet A Dietary Approaches to Stop Hypertension (DASH) score was calculated based on the food frequency questionnaire (FFQ) for each participant. According to Fung\u2019s method26, the Dietary Approaches to Stop Hypertension (DASH) score was constructed based on the foods and nutrients emphasised or minimised in the Dietary Approaches to Stop Hypertension (DASH) diet, focusing on eight components: high intake of whole grains; fruits; vegetables; nuts and legumes; and low-fat dairy products, and low intake of red/processed meats; sweetened beverages; and sodium26.', '8f14390f-8489-48cb-9293-65927e83cdf2'])"
+        }
+    ],
+    "Foods to avoid": [
+        {
+            "Foods to avoid": "Sugared drinks",
+            "source": "diet_data/dash diet/30977404.csv_results4 (content: ['20', 'results4', ' The participants in the highest quartiles of the Dietary Approaches to Stop Hypertension (DASH) score had higher age and physical activity levels and lower pre-pregnancy body mass index (BMI) than the other quartiles. Adherence to the Dietary Approaches to Stop Hypertension (DASH) diet was associated with greater intakes of protein, fish, fruits, vegetables, nuts and legumes, dairy products and red/processed meats. Individuals in the top quartile of the Dietary Approaches to Stop Hypertension (DASH) diet had lower intakes of soft drinks and sweets and sodium than those in the bottom quartile. There were no significant differences in consumption of eggs or whole grains and mixed beans between quartiles of the Dietary Approaches to Stop Hypertension (DASH) score.Table 2 Basic characteristics and dietary intakes of participants by quartiles of Dietary Approach to Stop Hypertension (Dietary Approaches to Stop Hypertension (DASH)) score.', 'e9fa9363-7b3d-4fcb-aaca-5ecce7c8f089'])"
+        },
+        {
+            "Foods to avoid": "Sweets",
+            "source": "diet_data/dash diet/30977404.csv_results4 (content: ['20', 'results4', ' The participants in the highest quartiles of the Dietary Approaches to Stop Hypertension (DASH) score had higher age and physical activity levels and lower pre-pregnancy body mass index (BMI) than the other quartiles. Adherence to the Dietary Approaches to Stop Hypertension (DASH) diet was associated with greater intakes of protein, fish, fruits, vegetables, nuts and legumes, dairy products and red/processed meats. Individuals in the top quartile of the Dietary Approaches to Stop Hypertension (DASH) diet had lower intakes of soft drinks and sweets and sodium than those in the bottom quartile. There were no significant differences in consumption of eggs or whole grains and mixed beans between quartiles of the Dietary Approaches to Stop Hypertension (DASH) score.Table 2 Basic characteristics and dietary intakes of participants by quartiles of Dietary Approach to Stop Hypertension (Dietary Approaches to Stop Hypertension (DASH)) score.', 'e9fa9363-7b3d-4fcb-aaca-5ecce7c8f089'])"
+        },
+        {
+            "Foods to avoid": "Sodium",
+            "source": "diet_data/dash diet/30977404.csv_results4 (content: ['20', 'results4', ' The participants in the highest quartiles of the Dietary Approaches to Stop Hypertension (DASH) score had higher age and physical activity levels and lower pre-pregnancy body mass index (BMI) than the other quartiles. Adherence to the Dietary Approaches to Stop Hypertension (DASH) diet was associated with greater intakes of protein, fish, fruits, vegetables, nuts and legumes, dairy products and red/processed meats. Individuals in the top quartile of the Dietary Approaches to Stop Hypertension (DASH) diet had lower intakes of soft drinks and sweets and sodium than those in the bottom quartile. There were no significant differences in consumption of eggs or whole grains and mixed beans between quartiles of the Dietary Approaches to Stop Hypertension (DASH) score.Table 2 Basic characteristics and dietary intakes of participants by quartiles of Dietary Approach to Stop Hypertension (Dietary Approaches to Stop Hypertension (DASH)) score.', 'e9fa9363-7b3d-4fcb-aaca-5ecce7c8f089'])"
+        },
+        {
+            "Foods to avoid": "Saturated fat",
+            "source": "diet_data/dash diet/30977404.csv_results4 (content: ['20', 'results4', ' The participants in the highest quartiles of the Dietary Approaches to Stop Hypertension (DASH) score had higher age and physical activity levels and lower pre-pregnancy body mass index (BMI) than the other quartiles. Adherence to the Dietary Approaches to Stop Hypertension (DASH) diet was associated with greater intakes of protein, fish, fruits, vegetables, nuts and legumes, dairy products and red/processed meats. Individuals in the top quartile of the Dietary Approaches to Stop Hypertension (DASH) diet had lower intakes of soft drinks and sweets and sodium than those in the bottom quartile. There were no significant differences in consumption of eggs or whole grains and mixed beans between quartiles of the Dietary Approaches to Stop Hypertension (DASH) score.Table 2 Basic characteristics and dietary intakes of participants by quartiles of Dietary Approach to Stop Hypertension (Dietary Approaches to Stop Hypertension (DASH)) score.', 'e9fa9363-7b3d-4fcb-aaca-5ecce7c8f089'])"
+        }
+    ],
+    "Macros: Percent of Fat": [
+        {
+            "Macros: Percent of Fat": "25-30%",
+            "source": "diet_data/dash diet/33975364.csv_methods7 (content: ['7', 'methods7', \"  The participants\u2019 energy requirements were estimated from the resting energy expenditure, based on the Mifflin-St Jeor formula and multiplied by the physical activity coefficient [30]. Because the participants were overweight and obese, 500\u2013700\\xa0kcal/d was deducted from their energy requirements. Based on each participant's energy requirement, the dietitian determined the diet, which contained approximately 25\u201330% fat, 15% protein, and 55\u201360% carbohydrate. In the dietary approach to stop hypertension (DASH) diet group, the participants were instructed to follow the dietary approach to stop hypertension (DASH) diet (2000\u20133000\\xa0kcal based on the participant\u2019s energy requirement), composed of 8\u201312 servings/day of fruits and vegetables, 7\u201315 servings of whole grains, 2\u20133 servings of low-fat dairy products, two servings of red meat, one serving of nuts and seeds, and limited intake of sweets (five servings per week).\", 'a86041b4-6698-4423-bb4d-4414298a64a6'])"
+        }
+    ],
+    "Percent of Protein": [
+        {
+            "Percent of Protein": "15%",
+            "source": "diet_data/dash diet/33975364.csv_methods7 (content: ['7', 'methods7', \"  The participants\u2019 energy requirements were estimated from the resting energy expenditure, based on the Mifflin-St Jeor formula and multiplied by the physical activity coefficient [30]. Because the participants were overweight and obese, 500\u2013700\\xa0kcal/d was deducted from their energy requirements. Based on each participant's energy requirement, the dietitian determined the diet, which contained approximately 25\u201330% fat, 15% protein, and 55\u201360% carbohydrate. In the dietary approach to stop hypertension (DASH) diet group, the participants were instructed to follow the dietary approach to stop hypertension (DASH) diet (2000\u20133000\\xa0kcal based on the participant\u2019s energy requirement), composed of 8\u201312 servings/day of fruits and vegetables, 7\u201315 servings of whole grains, 2\u20133 servings of low-fat dairy products, two servings of red meat, one serving of nuts and seeds, and limited intake of sweets (five servings per week).\", 'a86041b4-6698-4423-bb4d-4414298a64a6'])"
+        }
+    ],
+    "Percent of Carbs": [
+        {
+            "Percent of Carbs": "55-60%",
+            "source": "diet_data/dash diet/33975364.csv_methods7 (content: ['7', 'methods7', \"  The participants\u2019 energy requirements were estimated from the resting energy expenditure, based on the Mifflin-St Jeor formula and multiplied by the physical activity coefficient [30]. Because the participants were overweight and obese, 500\u2013700\\xa0kcal/d was deducted from their energy requirements. Based on each participant's energy requirement, the dietitian determined the diet, which contained approximately 25\u201330% fat, 15% protein, and 55\u201360% carbohydrate. In the dietary approach to stop hypertension (DASH) diet group, the participants were instructed to follow the dietary approach to stop hypertension (DASH) diet (2000\u20133000\\xa0kcal based on the participant\u2019s energy requirement), composed of 8\u201312 servings/day of fruits and vegetables, 7\u201315 servings of whole grains, 2\u20133 servings of low-fat dairy products, two servings of red meat, one serving of nuts and seeds, and limited intake of sweets (five servings per week).\", 'a86041b4-6698-4423-bb4d-4414298a64a6'])"
+        }
+    ]
+}
