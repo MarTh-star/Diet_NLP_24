@@ -50,7 +50,7 @@ def save_to_chroma(documents: list[Document], chroma_path: Path, batch_size: int
         start += batch_size
 
 def load_last_processed_index(chroma_path: Path) -> int:
-    progress_file = chroma_path / "progress.log"
+    progress_file = chroma_path / conf.PROGRESS_LOG
     if progress_file.exists():
         with open(progress_file, "r") as file:
             last_index = int(file.read().strip())
@@ -58,7 +58,7 @@ def load_last_processed_index(chroma_path: Path) -> int:
     return 0
 
 def update_last_processed_index(chroma_path: Path, last_index: int) -> None:
-    progress_file = chroma_path / "progress.log"
+    progress_file = chroma_path / conf.PROGRESS_LOG
     with open(progress_file, "w") as file:
         file.write(str(last_index))
 
@@ -78,11 +78,12 @@ def query_embeddings(chroma_path: Path, query: str, top_k: int=50, threshold: fl
     # Retrieving the context from the DB using similarity search
     relevant_documents = db.similarity_search_with_relevance_scores(query, k=top_k)
     return relevant_documents
-   # return [doc for doc, score in relevant_documents if score >= threshold]
+    # TODO: Filter out documents with scores below the threshold
+    # return [doc for doc, score in relevant_documents if score >= threshold]
 
 if __name__ == "__main__":
     build_chroma(data_path=conf.DATA_PATH, chroma_path=conf.CHROMA_PATH, overwrite=False)
-   # relevant_documents = query_embeddings(conf.CHROMA_PATH, "What is actually ketogenic diet and how it can help me?")
+    relevant_documents = query_embeddings(conf.CHROMA_PATH, "What is actually ketogenic diet and how it can help me?")
     for doc in relevant_documents:
         print(doc.page_content)
         print("="*80)

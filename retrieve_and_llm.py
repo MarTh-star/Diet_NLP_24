@@ -8,9 +8,6 @@ from langchain_chroma import Chroma
 from langchain_core.prompts import ChatPromptTemplate
 import conf
 
-# Path to the placeholder configuration file
-placeholder_config_path = "placeholders.json"
-
 # Define the columns for the JSON data categories and CSV output
 columns = [
     "Age range", "Gender", "Lose/maintain/gain weight", "Diet name", 
@@ -20,7 +17,7 @@ columns = [
 ]
 
 # Base directory for data sources
-base_directory = "diet_data"
+
 
 def load_profiles(config_path):
     """Load profiles from an external configuration file."""
@@ -31,7 +28,7 @@ def load_profiles(config_path):
         print(f"Placeholder config file not found: {config_path}")
         return []
 
-profiles = load_profiles(placeholder_config_path)
+profiles = load_profiles(conf.PLACEHOLDER_CONFIG_PATH)
 
 PROMPT_TEMPLATE = """
 You are an expert on nutrition. Below is the information you've already provided:
@@ -94,7 +91,9 @@ def query_rag(column, profile, previous_answers):
 
 
 def parse_concatenated_json(response_text):
-    """Parse concatenated JSON objects by recognizing complete objects individually."""
+    """Parse concatenated JSON objects by recognizing complete objects individually.
+        This is to handle when the response contains multiple JSON objects but they 
+        are not always formatted exactly alike."""
     parsed_data = []
     current_object = ""
     open_braces = 0  # Track open braces to identify complete JSON objects
@@ -130,7 +129,7 @@ def build_full_path(source):
         diet_directory = match.group(1)
         numeric_filename = f"{match.group(2)}.csv"
         suffix = match.group(3)
-        full_path = os.path.join(base_directory, diet_directory, numeric_filename)
+        full_path = os.path.join(conf.BASE_DIRECTORY, diet_directory, numeric_filename)
         try:
             with open(full_path, 'r') as csv_file:
                 csv_reader = csv.reader(csv_file)
@@ -146,8 +145,6 @@ def build_full_path(source):
         return source
 
 if __name__ == "__main__":
-    build_chroma(data_path=conf.DATA_PATH, chroma_path=conf.CHROMA_PATH, overwrite=False)
-
     for index, profile in enumerate(profiles):
         for column in columns:
             if column in profile and profile[column]:  # Skip if already filled
@@ -176,7 +173,7 @@ if __name__ == "__main__":
                             "source": full_path_source
                         })
 
-        # Write profile to JSON and CSV (as previously structured in your code)
+        # Write profile to JSON and CSV
         json_filename = f"nutrition_advice_{index}.json"
         csv_filename = f"nutrition_advice_{index}.csv"
         
