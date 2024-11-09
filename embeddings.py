@@ -6,6 +6,7 @@ from langchain.schema import Document
 from langchain_chroma import Chroma
 import conf
 
+
 def load_documents(data_path: Path) -> list[Document]:
     docs = []
     for diet_type_path in data_path.iterdir():
