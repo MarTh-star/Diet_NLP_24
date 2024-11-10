@@ -10,23 +10,29 @@ import conf
 
 # Define the columns for the JSON data categories and CSV output
 columns = [
-    "Age range", "Gender", "Lose/maintain/gain weight", "Diet name", 
-    "Health Pre-Condition", "Foods to increase consumption of", 
-    "Foods to eat in moderation", "Foods to avoid", "Macros: Percent of Fat", 
-    "Percent of Protein", "Percent of Carbs"
+    "Age range",
+    "Gender",
+    "Lose/maintain/gain weight",
+    "Diet name",
+    "Health Pre-Condition",
+    "Foods to increase consumption of",
+    "Foods to eat in moderation",
+    "Foods to avoid",
+    "Macros: Percent of Fat",
+    "Percent of Protein",
+    "Percent of Carbs",
 ]
-
-# Base directory for data sources
 
 
 def load_profiles(config_path):
     """Load profiles from an external configuration file."""
     if os.path.exists(config_path):
-        with open(config_path, 'r') as file:
+        with open(config_path, "r") as file:
             return json.load(file).get("profiles", [])
     else:
         print(f"Placeholder config file not found: {config_path}")
         return []
+
 
 profiles = load_profiles(conf.PLACEHOLDER_CONFIG_PATH)
 
@@ -48,10 +54,11 @@ Don't format the answer as a list, and don't answer in full sentences, only one 
 Reference all context source metadata that was used.
 """
 
+
 def format_previous_answers(profile):
     """Formats answers from filled-in columns of the current profile into a readable string for inclusion in the prompt, excluding the source."""
     previous_answers = []
-    
+
     for category, answers in profile.items():
         if answers:  # Only process if there are answers for the category
             for answer in answers:
@@ -59,15 +66,16 @@ def format_previous_answers(profile):
                     answer_text = answer.get(category, "")
                     previous_answers.append(f"{category}: {answer_text}")
                 else:
-                    print(f"Expected a dictionary, but got {type(answer)} for category '{category}'")
+                    print(
+                        f"Expected a dictionary, but got {type(answer)} for category '{category}'"
+                    )
     return "\n".join(previous_answers)
-
 
 
 def query_rag(column, profile, previous_answers):
     """Generate and execute a query based on profile-specific values and the query template."""
     query_text = f'Write the {column} column for a lookup table for a {profile["Gender"][0]["Gender"]} aged {profile["Age range"][0]["Age range"]} who wants to {profile["Lose/maintain/gain weight"][0]["Lose/maintain/gain weight"]} using the {profile["Diet name"][0]["Diet name"]}.'
-    
+
     # Retrieve context using Chroma
     retriever = Chroma(persist_directory=str(conf.CHROMA_PATH))
     results = query_embeddings(conf.CHROMA_PATH, query_text)
@@ -75,12 +83,18 @@ def query_rag(column, profile, previous_answers):
         print(f"Unable to find matching results for {column}.")
         return None
     context_text = "\n\n - -\n\n".join(
-        [f"{doc.page_content} | Metadata: {doc.metadata}" for doc, _score in results])
+        [f"{doc.page_content} | Metadata: {doc.metadata}" for doc, _score in results]
+    )
 
     # Create prompt template using context, question text, previous answers, and column name
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
-    prompt = prompt_template.format(previous_answers=previous_answers, context=context_text, question=query_text, column=column)
-  
+    prompt = prompt_template.format(
+        previous_answers=previous_answers,
+        context=context_text,
+        question=query_text,
+        column=column,
+    )
+
     # Initialize OpenAI chat model
     model = ChatOpenAI(model="gpt-4o", temperature=0)
 
@@ -92,8 +106,8 @@ def query_rag(column, profile, previous_answers):
 
 def parse_concatenated_json(response_text):
     """Parse concatenated JSON objects by recognizing complete objects individually.
-        This is to handle when the response contains multiple JSON objects but they 
-        are not always formatted exactly alike."""
+    This is to handle when the response contains multiple JSON objects but they
+    are not always formatted exactly alike."""
     parsed_data = []
     current_object = ""
     open_braces = 0  # Track open braces to identify complete JSON objects
@@ -124,14 +138,14 @@ def parse_concatenated_json(response_text):
 
 def build_full_path(source):
     """Convert the source text to a full file path, dynamically using the diet directory name and numeric filename."""
-    match = re.match(r'^(.*?)_(\d+)\.csv_(.*)$', source)
+    match = re.match(r"^(.*?)_(\d+)\.csv_(.*)$", source)
     if match:
         diet_directory = match.group(1)
         numeric_filename = f"{match.group(2)}.csv"
         suffix = match.group(3)
         full_path = os.path.join(conf.BASE_DIRECTORY, diet_directory, numeric_filename)
         try:
-            with open(full_path, 'r') as csv_file:
+            with open(full_path, "r") as csv_file:
                 csv_reader = csv.reader(csv_file)
                 for row in csv_reader:
                     if suffix in row:
@@ -143,6 +157,7 @@ def build_full_path(source):
         return f"{full_path}_{suffix}"
     else:
         return source
+
 
 if __name__ == "__main__":
     for index, profile in enumerate(profiles):
@@ -168,15 +183,14 @@ if __name__ == "__main__":
                         source = entry.get("source", "")
                         full_path_source = build_full_path(source)
 
-                        profile[column].append({
-                            column: advice,
-                            "source": full_path_source
-                        })
+                        profile[column].append(
+                            {column: advice, "source": full_path_source}
+                        )
 
         # Write profile to JSON and CSV
         json_filename = f"nutrition_advice_{index}.json"
         csv_filename = f"nutrition_advice_{index}.csv"
-        
+
         with open(json_filename, "w") as json_file:
             json.dump(profile, json_file, indent=4)
         print(f"Data has been written to '{json_filename}'.")
@@ -190,10 +204,10 @@ if __name__ == "__main__":
                         if isinstance(entry, dict):
                             advice = entry.get(category, "")
                             source = entry.get("source", "")
-                    
+
                             # Extract only the part after "content: "
-                            content_only_source = re.sub(r'^.*\(content: ', '', source).rstrip(')')
+                            content_only_source = re.sub(
+                                r"^.*\(content: ", "", source
+                            ).rstrip(")")
 
                             writer.writerow([category, advice, content_only_source])
-
-
