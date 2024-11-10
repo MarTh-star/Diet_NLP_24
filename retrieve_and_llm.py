@@ -136,14 +136,14 @@ def parse_concatenated_json(response_text):
     return parsed_data
 
 
-def build_full_path(source):
+def build_full_path(source: str) -> str:
     """Convert the source text to a full file path, dynamically using the diet directory name and numeric filename."""
     match = re.match(r"^(.*?)_(\d+)\.csv_(.*)$", source)
     if match:
         diet_directory = match.group(1)
         numeric_filename = f"{match.group(2)}.csv"
         suffix = match.group(3)
-        full_path = os.path.join(conf.BASE_DIRECTORY, diet_directory, numeric_filename)
+        full_path = conf.DATA_PATH / diet_directory / numeric_filename
         try:
             with open(full_path, "r") as csv_file:
                 csv_reader = csv.reader(csv_file)
