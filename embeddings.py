@@ -75,7 +75,7 @@ def update_last_processed_index(chroma_path: Path, last_index: int) -> None:
 
 def build_chroma(data_path: Path, chroma_path: Path, overwrite: bool = False) -> None:
     """Construct full ChromaDB which can be used later to query embeddings.
-    
+
     If the ChromaDB already exists, it won't be overwritten, unless explicitely used with the overwrite param.
     """
     if overwrite and chroma_path.exists():
@@ -86,11 +86,9 @@ def build_chroma(data_path: Path, chroma_path: Path, overwrite: bool = False) ->
         save_to_chroma(documents, chroma_path)
 
 
-def query_embeddings(
-    chroma_path: Path, query: str, top_k: int = 50, threshold: float = 0.9
-) -> list[Document]:
+def query_embeddings(chroma_path: Path, query: str, top_k: int = 50) -> list[Document]:
     """Get embeddings for the specified query.
-    
+
     Number of embeddings returned is parametrized by the top_k param.
     """
     db = Chroma(
@@ -100,8 +98,6 @@ def query_embeddings(
     # Retrieving the context from the DB using similarity search
     relevant_documents = db.similarity_search_with_relevance_scores(query, k=top_k)
     return relevant_documents
-    # TODO: Filter out documents with scores below the threshold
-    # return [doc for doc, score in relevant_documents if score >= threshold]
 
 
 if __name__ == "__main__":
