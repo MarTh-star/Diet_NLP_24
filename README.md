@@ -30,15 +30,17 @@ Diet_NLP_24 is a project aimed at leveraging an RAG model to analyze and process
 
 ## Python
 
-During development `python 3.12.7` has been used and is recommended to guarantee that everything functions.
+During development `python 3.12.7` has been used and it is guaranteed that everything will work under this version.
 
 ## Installation
 
-To get started with this project, clone the repository and install the required dependencies, it is recommended to create a new environment first:
+To get started with this project, clone the repository and install the required dependencies (it is recommended to use virtual environment for those packages):
 
 ```bash
 git clone https://github.com/MarTh-star/Diet_NLP_24.git
 cd Diet_NLP_24
+# Create venv using your favorite tool
+...
 pip install -r requirements.txt
 ```
 
@@ -49,10 +51,9 @@ After installing the dependencies and adding your openai api key, you have to st
 You can do this by running:
 
 ```bash
-python embeddings.py
+python3 embeddings.py
 ```
 
-Which will take the values in the placeholders.json file and retrieve
 
 ## Usage
 
@@ -61,7 +62,7 @@ For the purposes of this project there is already a `placeholders.json`file whic
 Once the setup is finished you can run the script:
 
 ```bash
-python retrieve_and_llm.py
+python3 retrieve_and_llm.py
 ```
 
 ## Main Scripts
