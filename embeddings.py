@@ -8,6 +8,7 @@ import conf
 
 
 def load_documents(data_path: Path) -> list[Document]:
+    """Parse dietary data from the csv format to langchain.Document for all files under data_path."""
     docs = []
     for diet_type_path in data_path.iterdir():
         for chunk_path in diet_type_path.iterdir():
@@ -37,6 +38,7 @@ def load_documents(data_path: Path) -> list[Document]:
 def save_to_chroma(
     documents: list[Document], chroma_path: Path, batch_size: int = 40000
 ) -> None:
+    """Saves list of documents into ChromaDB under specified path."""
     embeddings = OpenAIEmbeddings(api_key=conf.OPENAI_API_KEY)
     total_docs = len(documents)
     start = load_last_processed_index(chroma_path)
@@ -55,6 +57,7 @@ def save_to_chroma(
 
 
 def load_last_processed_index(chroma_path: Path) -> int:
+    """Loads index of the last processed chunk."""
     progress_file = chroma_path / conf.PROGRESS_LOG
     if progress_file.exists():
         with open(progress_file, "r") as file:
@@ -64,12 +67,17 @@ def load_last_processed_index(chroma_path: Path) -> int:
 
 
 def update_last_processed_index(chroma_path: Path, last_index: int) -> None:
+    """Update index of the last processed chunk by saving it to the file."""
     progress_file = chroma_path / conf.PROGRESS_LOG
     with open(progress_file, "w") as file:
         file.write(str(last_index))
 
 
 def build_chroma(data_path: Path, chroma_path: Path, overwrite: bool = False) -> None:
+    """Construct full ChromaDB which can be used later to query embeddings.
+    
+    If the ChromaDB already exists, it won't be overwritten, unless explicitely used with the overwrite param.
+    """
     if overwrite and chroma_path.exists():
         shutil.rmtree(chroma_path)
 
@@ -81,6 +89,10 @@ def build_chroma(data_path: Path, chroma_path: Path, overwrite: bool = False) ->
 def query_embeddings(
     chroma_path: Path, query: str, top_k: int = 50, threshold: float = 0.9
 ) -> list[Document]:
+    """Get embeddings for the specified query.
+    
+    Number of embeddings returned is parametrized by the top_k param.
+    """
     db = Chroma(
         persist_directory=str(chroma_path), embedding_function=OpenAIEmbeddings()
     )
