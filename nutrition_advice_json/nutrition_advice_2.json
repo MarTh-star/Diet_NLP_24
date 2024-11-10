@@ -1,0 +1,88 @@
+{
+    "Age range": [
+        {
+            "Age range": "36-45 years",
+            "source": "pre-filled"
+        }
+    ],
+    "Gender": [
+        {
+            "Gender": "Any",
+            "source": "pre-filled"
+        }
+    ],
+    "Lose/maintain/gain weight": [
+        {
+            "Lose/maintain/gain weight": "Maintain weight",
+            "source": "pre-filled"
+        }
+    ],
+    "Diet name": [
+        {
+            "Diet name": "dash diet",
+            "source": "pre-filled"
+        }
+    ],
+    "Health Pre-Condition": [
+        {
+            "Health Pre-Condition": "BMI 25-30 kg/m2",
+            "source": "diet_data/dash diet/27733225.csv_results0 (content: ['20', 'results0', 'Participants The disposition of participants throughout the study is shown in Supplementary Material. A total of 78 participants were randomized to the Dietary Approaches to Stop Hypertension (DASH) diet (n\\u2009=\\u200940) or the commercial weight loss program (n\\u2009=\\u200938). Two participants randomized to the Dietary Approaches to Stop Hypertension (DASH) diet discontinued the study at the baseline visit prior to beginning the assigned dietary intervention on the following day, so no last observation carried forward (LOCF) imputation was applied for these individuals. Participants included predominantly Caucasian (70.6%) women (n\\u2009=\\u200961) and men (n\\u2009=\\u200917) with overweight and obesity, with a mean baseline age of 50.4\\u2009years, body weight of 95.7\\u2009kg, and body mass index (BMI) of 34.4\\u2009kg/m2. Additional demographic characteristics are presented in Table 1.', '4bc92ef8-b77a-444e-aaf9-505d59308b1d'])"
+        }
+    ],
+    "Foods to increase consumption of": [
+        {
+            "Foods to increase consumption of": "fruits",
+            "source": "diet_data/dash diet/31545146.csv_methods4 (content: ['8', 'methods4', '43, 0.57, and 0.45, respectively. The energy adjusted correlation coefficients for \u03b2-carotene and vitamin C were 0.65 and 0.76, respectively.  Adherence to DASH-style diet In this study, to indicate the degree of adherence to DASH-style diet, we constructed DASH scores based on foods and nutrients emphasized or minimized in the DASH diet, focusing on eight components: high intake of fruits, vegetables, nuts and legumes, low-fat dairy products, and whole grains and low intake of sodium, sugar-sweetened beverages (sugar sweetened beverages (SSB)) and sweets, and red and processed meats. For each participant, energy-adjusted intakes of the above-mentioned foods and nutrients were calculated using residual method36. Then, participants were categorized into deciles of the energy-adjusted intakes of foods and nutrients.', '01e205cd-5e9e-4cdd-b7a0-e9f1973068e4'])"
+        },
+        {
+            "Foods to increase consumption of": "vegetables",
+            "source": "diet_data/dash diet/31545146.csv_methods4 (content: ['8', 'methods4', '43, 0.57, and 0.45, respectively. The energy adjusted correlation coefficients for \u03b2-carotene and vitamin C were 0.65 and 0.76, respectively.  Adherence to DASH-style diet In this study, to indicate the degree of adherence to DASH-style diet, we constructed DASH scores based on foods and nutrients emphasized or minimized in the DASH diet, focusing on eight components: high intake of fruits, vegetables, nuts and legumes, low-fat dairy products, and whole grains and low intake of sodium, sugar-sweetened beverages (sugar sweetened beverages (SSB)) and sweets, and red and processed meats. For each participant, energy-adjusted intakes of the above-mentioned foods and nutrients were calculated using residual method36. Then, participants were categorized into deciles of the energy-adjusted intakes of foods and nutrients.', '01e205cd-5e9e-4cdd-b7a0-e9f1973068e4'])"
+        },
+        {
+            "Foods to increase consumption of": "nuts",
+            "source": "diet_data/dash diet/31545146.csv_methods4 (content: ['8', 'methods4', '43, 0.57, and 0.45, respectively. The energy adjusted correlation coefficients for \u03b2-carotene and vitamin C were 0.65 and 0.76, respectively.  Adherence to DASH-style diet In this study, to indicate the degree of adherence to DASH-style diet, we constructed DASH scores based on foods and nutrients emphasized or minimized in the DASH diet, focusing on eight components: high intake of fruits, vegetables, nuts and legumes, low-fat dairy products, and whole grains and low intake of sodium, sugar-sweetened beverages (sugar sweetened beverages (SSB)) and sweets, and red and processed meats. For each participant, energy-adjusted intakes of the above-mentioned foods and nutrients were calculated using residual method36. Then, participants were categorized into deciles of the energy-adjusted intakes of foods and nutrients.', '01e205cd-5e9e-4cdd-b7a0-e9f1973068e4'])"
+        },
+        {
+            "Foods to increase consumption of": "legumes",
+            "source": "diet_data/dash diet/31545146.csv_methods4 (content: ['8', 'methods4', '43, 0.57, and 0.45, respectively. The energy adjusted correlation coefficients for \u03b2-carotene and vitamin C were 0.65 and 0.76, respectively.  Adherence to DASH-style diet In this study, to indicate the degree of adherence to DASH-style diet, we constructed DASH scores based on foods and nutrients emphasized or minimized in the DASH diet, focusing on eight components: high intake of fruits, vegetables, nuts and legumes, low-fat dairy products, and whole grains and low intake of sodium, sugar-sweetened beverages (sugar sweetened beverages (SSB)) and sweets, and red and processed meats. For each participant, energy-adjusted intakes of the above-mentioned foods and nutrients were calculated using residual method36. Then, participants were categorized into deciles of the energy-adjusted intakes of foods and nutrients.', '01e205cd-5e9e-4cdd-b7a0-e9f1973068e4'])"
+        },
+        {
+            "Foods to increase consumption of": "low-fat dairy products",
+            "source": "diet_data/dash diet/31545146.csv_methods4 (content: ['8', 'methods4', '43, 0.57, and 0.45, respectively. The energy adjusted correlation coefficients for \u03b2-carotene and vitamin C were 0.65 and 0.76, respectively.  Adherence to DASH-style diet In this study, to indicate the degree of adherence to DASH-style diet, we constructed DASH scores based on foods and nutrients emphasized or minimized in the DASH diet, focusing on eight components: high intake of fruits, vegetables, nuts and legumes, low-fat dairy products, and whole grains and low intake of sodium, sugar-sweetened beverages (sugar sweetened beverages (SSB)) and sweets, and red and processed meats. For each participant, energy-adjusted intakes of the above-mentioned foods and nutrients were calculated using residual method36. Then, participants were categorized into deciles of the energy-adjusted intakes of foods and nutrients.', '01e205cd-5e9e-4cdd-b7a0-e9f1973068e4'])"
+        },
+        {
+            "Foods to increase consumption of": "whole grains",
+            "source": "diet_data/dash diet/31545146.csv_methods4 (content: ['8', 'methods4', '43, 0.57, and 0.45, respectively. The energy adjusted correlation coefficients for \u03b2-carotene and vitamin C were 0.65 and 0.76, respectively.  Adherence to DASH-style diet In this study, to indicate the degree of adherence to DASH-style diet, we constructed DASH scores based on foods and nutrients emphasized or minimized in the DASH diet, focusing on eight components: high intake of fruits, vegetables, nuts and legumes, low-fat dairy products, and whole grains and low intake of sodium, sugar-sweetened beverages (sugar sweetened beverages (SSB)) and sweets, and red and processed meats. For each participant, energy-adjusted intakes of the above-mentioned foods and nutrients were calculated using residual method36. Then, participants were categorized into deciles of the energy-adjusted intakes of foods and nutrients.', '01e205cd-5e9e-4cdd-b7a0-e9f1973068e4'])"
+        }
+    ],
+    "Foods to eat in moderation": [
+        {
+            "Foods to eat in moderation": "red meat",
+            "source": "diet_data/dash diet/23216203.csv_results22 (content: ['28', 'results22', ' For example, those in the Dietary Approaches to Stop Hypertension (DASH) diet group were instructed to have \u22653 servings of low-fat dairy, \u22658 servings of fruit and vegetables daily, and also include \u22653 servings of fish, \u22651 serving of legumes, and \u22654 servings of unsalted nuts and seed weekly. They were asked to limit red meat to \u22643 servings per week. ', 'e9aa2e79-c136-4b8c-ae72-6e61fbe81db0'])"
+        }
+    ],
+    "Foods to avoid": [
+        {
+            "Foods to avoid": "sugar-rich foods",
+            "source": "diet_data/nordic diet/26117949.csv_results9 (content: ['20', 'results9', '56\\t 10: \u2018Avoid sugar rich foods and beverages for everyday use\u2019.\\t<10 E% sugar/day\\t88\\t87\\t96\\t0.51\\t New Nordic Diet (NND), New Nordic Diet.  * Proportions were calculated using chi-square.  \u2020 For those with an average intake of at least 100 g of fruit juice, 100 g of juice were included.  \u2021 Includes lean fish, fatty fish, fish products, and selected fish toppings.  \u00a7 Includes lean, red meat (unprocessed), ground meat, and processed meat (salted meat, minced meat, sandwich meat, and liver paste). ', '73aa275c-4ea3-4b59-8467-8bf6b5e726f4'])"
+        }
+    ],
+    "Macros: Percent of Fat": [
+        {
+            "Macros: Percent of Fat": "25-30%",
+            "source": "diet_data/dash diet/34100490.csv_methods3 (content: ['3', 'methods3', '  Dietary Intervention  The intervention group (33 patients) received the Dietary Approaches to Stop Hypertension (DASH) diet and the other 33 patients received a control diet for 3 months. Both the diets included a macronutrient composition of 50\u201355% carbohydrates, 15\u201320% protein, and 30% total fat. The Dietary Approaches to Stop Hypertension (DASH) diet was rich in whole grains, low-fat dairy products, vegetables, and fruits. It was low in sweets, refined grains, total fat, cholesterol, and saturated fat. The control diet presented as a usual diet with no recommendation for increasing consumption of whole grains, fish, and nuts, as well as no recommendation for fat intakes restriction. The control group consumed less serving of nuts, whole grains, low-fat dairy, fruits, vegetables, and whole grains compared to the intervention group.', '363ec76c-67d9-4768-bbca-3dee0df0f058'])"
+        }
+    ],
+    "Percent of Protein": [
+        {
+            "Percent of Protein": "15%",
+            "source": "diet_data/dash diet/33975364.csv_methods7 (content: ['7', 'methods7', \"  The participants\u2019 energy requirements were estimated from the resting energy expenditure, based on the Mifflin-St Jeor formula and multiplied by the physical activity coefficient [30]. Because the participants were overweight and obese, 500\u2013700\\xa0kcal/d was deducted from their energy requirements. Based on each participant's energy requirement, the dietitian determined the diet, which contained approximately 25\u201330% fat, 15% protein, and 55\u201360% carbohydrate. In the dietary approach to stop hypertension (DASH) diet group, the participants were instructed to follow the dietary approach to stop hypertension (DASH) diet (2000\u20133000\\xa0kcal based on the participant\u2019s energy requirement), composed of 8\u201312 servings/day of fruits and vegetables, 7\u201315 servings of whole grains, 2\u20133 servings of low-fat dairy products, two servings of red meat, one serving of nuts and seeds, and limited intake of sweets (five servings per week).\", 'a86041b4-6698-4423-bb4d-4414298a64a6'])"
+        }
+    ],
+    "Percent of Carbs": [
+        {
+            "Percent of Carbs": "55-60%",
+            "source": "diet_data/dash diet/33975364.csv_methods7 (content: ['7', 'methods7', \"  The participants\u2019 energy requirements were estimated from the resting energy expenditure, based on the Mifflin-St Jeor formula and multiplied by the physical activity coefficient [30]. Because the participants were overweight and obese, 500\u2013700\\xa0kcal/d was deducted from their energy requirements. Based on each participant's energy requirement, the dietitian determined the diet, which contained approximately 25\u201330% fat, 15% protein, and 55\u201360% carbohydrate. In the dietary approach to stop hypertension (DASH) diet group, the participants were instructed to follow the dietary approach to stop hypertension (DASH) diet (2000\u20133000\\xa0kcal based on the participant\u2019s energy requirement), composed of 8\u201312 servings/day of fruits and vegetables, 7\u201315 servings of whole grains, 2\u20133 servings of low-fat dairy products, two servings of red meat, one serving of nuts and seeds, and limited intake of sweets (five servings per week).\", 'a86041b4-6698-4423-bb4d-4414298a64a6'])"
+        }
+    ]
+}

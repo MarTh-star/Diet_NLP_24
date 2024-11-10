@@ -1,0 +1,124 @@
+{
+    "Age range": [
+        {
+            "Age range": "46-55 years",
+            "source": "pre-filled"
+        }
+    ],
+    "Gender": [
+        {
+            "Gender": "Any",
+            "source": "pre-filled"
+        }
+    ],
+    "Lose/maintain/gain weight": [
+        {
+            "Lose/maintain/gain weight": "Lose weight",
+            "source": "pre-filled"
+        }
+    ],
+    "Diet name": [
+        {
+            "Diet name": "mediterranean diet",
+            "source": "pre-filled"
+        }
+    ],
+    "Health Pre-Condition": [
+        {
+            "Health Pre-Condition": "High cholesterol",
+            "source": "pre-filled"
+        }
+    ],
+    "Foods to increase consumption of": [
+        {
+            "Foods to increase consumption of": "olive oil",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to increase consumption of": "vegetables",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to increase consumption of": "legumes",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to increase consumption of": "whole grains",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to increase consumption of": "fruits",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to increase consumption of": "nuts",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to increase consumption of": "fish",
+            "source": "diet_data/mediterranean diet/31206206.csv_introduction9 (content: ['9', 'introduction9', ' Details of the patients\u2019 dietary adherence, energy, nutrients, and food intake (baseline and after 1 year of follow-up) are shown in S1 Text and S1, S2, S3 and S4 Tables.  In the Mediterranean diet group, the main recommendations were abundant use of virgin olive oil for cooking and dressing (\u22654 tablespoons/day; 10\u201315 g/tablespoon); daily consumption of at least 2 servings of vegetables (200 g/serving; at least one serving raw or as salad) and 3 or more units of fresh fruit (125\u2013150 g/unit); weekly consumption of at least 3 servings of legumes (150 g cooked weight/serving), 3 or more servings of fish or seafood (especially oily fish; 100\u2013150 g/serving), and fresh nuts and seeds (3 or more handfuls per week); cooking dishes seasoned with \u201csofrito\u201d (a slow-cooked homemade sauce with tomato, garlic, onion, aromatic herbs, and olive oil) at least twice a week; a reduction in meat consumption,', 'c4c9d3d4-7573-467d-aac2-035bd1a21b08'])"
+        },
+        {
+            "Foods to increase consumption of": "seafood",
+            "source": "diet_data/mediterranean diet/31206206.csv_introduction9 (content: ['9', 'introduction9', ' Details of the patients\u2019 dietary adherence, energy, nutrients, and food intake (baseline and after 1 year of follow-up) are shown in S1 Text and S1, S2, S3 and S4 Tables.  In the Mediterranean diet group, the main recommendations were abundant use of virgin olive oil for cooking and dressing (\u22654 tablespoons/day; 10\u201315 g/tablespoon); daily consumption of at least 2 servings of vegetables (200 g/serving; at least one serving raw or as salad) and 3 or more units of fresh fruit (125\u2013150 g/unit); weekly consumption of at least 3 servings of legumes (150 g cooked weight/serving), 3 or more servings of fish or seafood (especially oily fish; 100\u2013150 g/serving), and fresh nuts and seeds (3 or more handfuls per week); cooking dishes seasoned with \u201csofrito\u201d (a slow-cooked homemade sauce with tomato, garlic, onion, aromatic herbs, and olive oil) at least twice a week; a reduction in meat consumption,', 'c4c9d3d4-7573-467d-aac2-035bd1a21b08'])"
+        },
+        {
+            "Foods to increase consumption of": "sofrito",
+            "source": "diet_data/mediterranean diet/31206206.csv_introduction9 (content: ['9', 'introduction9', ' Details of the patients\u2019 dietary adherence, energy, nutrients, and food intake (baseline and after 1 year of follow-up) are shown in S1 Text and S1, S2, S3 and S4 Tables.  In the Mediterranean diet group, the main recommendations were abundant use of virgin olive oil for cooking and dressing (\u22654 tablespoons/day; 10\u201315 g/tablespoon); daily consumption of at least 2 servings of vegetables (200 g/serving; at least one serving raw or as salad) and 3 or more units of fresh fruit (125\u2013150 g/unit); weekly consumption of at least 3 servings of legumes (150 g cooked weight/serving), 3 or more servings of fish or seafood (especially oily fish; 100\u2013150 g/serving), and fresh nuts and seeds (3 or more handfuls per week); cooking dishes seasoned with \u201csofrito\u201d (a slow-cooked homemade sauce with tomato, garlic, onion, aromatic herbs, and olive oil) at least twice a week; a reduction in meat consumption,', 'c4c9d3d4-7573-467d-aac2-035bd1a21b08'])"
+        }
+    ],
+    "Foods to eat in moderation": [
+        {
+            "Foods to eat in moderation": "poultry",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to eat in moderation": "dairy products",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        },
+        {
+            "Foods to eat in moderation": "wine",
+            "source": "diet_data/mediterranean diet/30969946.csv_methods9 (content: ['9', 'methods9', ' The two principal goals for intervention arms were a 5\u201310% weight loss and an increase in the level of adherence to the Mediterranean diet, i.e., a dietary pattern characterized by high consumption of olive oil, vegetables, legumes, whole grains, fruits and nuts, moderate consumption of poultry, fish and dairy products, low consumption of red meat products and sweets, and low-to-moderate consumption of wine as the main source of alcohol accompanying main meals (Supplemental Results Table S1) [22].', 'c93d98d2-7c8c-4f19-8d58-0533bd283ec8'])"
+        }
+    ],
+    "Foods to avoid": [
+        {
+            "Foods to avoid": "red meat",
+            "source": "diet_data/mediterranean diet/31206206.csv_introduction11 (content: ['11', 'introduction11', ' Specifically, they were advised to minimize the amount of oil used for cooking and dressing (\u22642 tablespoons/day); not to eat more than 1 serving of red meat per week; choosing low-fat dairy products; consumption of lean fish instead of oily fish or fish/seafood canned in oil (\u22641 serving/week); avoidance of nuts and seeds (\u22641 serving/ week); to limit the consumption of commercial bakery goods, sweets, and pastries (\u2264 1 serving/week); and to cook without the use of oil.  S4 Table provides the intake of main food groups at baseline and after 1 year of intervention. The consumption of whole grains (unrefined) instead of refined grains was recommended in both dietary intervention groups. Patients increased the intake of whole grains and reduced those refined grains after both the Mediterranean diet and the low-fat diet.', 'a38a245f-7889-4311-a938-044cccb4084e'])"
+        },
+        {
+            "Foods to avoid": "processed meat",
+            "source": "diet_data/mediterranean diet/28863633.csv_results5 (content: ['19', 'results5', 'ain cereals over white varieties\\t\\t  Increase fish (particularly oily fish) \\t\\tFish \u2265 3 servings (420g) (not battered or crumbed)\\t  Reduce meat \\t\\tRed meat \u2264 2 servings (300g) Processed meat \u2264 1 serving (150g)\\t  Reduce confectionary \\t\\tConfectionary \u2264 3 servings\\t  Moderate alcohol \\t\\tAlcohol (if consumed) 125-375 ml \u2265 3 days\\t Mediterranean Diet Score (MDS) Mediterranean Diet Score    Findings from our focus groups and interviews in relation to barriers for adoption of a MD are reported in full elsewhere [28]. This qualitative work was used to inform the COM-B analysis which identified barriers in capability, opportunity and motivation for achieving dietary change toward a MD in our target population as shown in Table 2.', 'b744f50c-d600-46ba-9f83-3e3fbcef8805'])"
+        },
+        {
+            "Foods to avoid": "sweets",
+            "source": "diet_data/mediterranean diet/31206206.csv_introduction11 (content: ['11', 'introduction11', ' Specifically, they were advised to minimize the amount of oil used for cooking and dressing (\u22642 tablespoons/day); not to eat more than 1 serving of red meat per week; choosing low-fat dairy products; consumption of lean fish instead of oily fish or fish/seafood canned in oil (\u22641 serving/week); avoidance of nuts and seeds (\u22641 serving/ week); to limit the consumption of commercial bakery goods, sweets, and pastries (\u2264 1 serving/week); and to cook without the use of oil.  S4 Table provides the intake of main food groups at baseline and after 1 year of intervention. The consumption of whole grains (unrefined) instead of refined grains was recommended in both dietary intervention groups. Patients increased the intake of whole grains and reduced those refined grains after both the Mediterranean diet and the low-fat diet.', 'a38a245f-7889-4311-a938-044cccb4084e'])"
+        },
+        {
+            "Foods to avoid": "sugar-sweetened beverages",
+            "source": "diet_data/mediterranean diet/25789820.csv_methods3 (content: ['6', 'methods3', ' Twelve of them with food consumption targets (olive oil as the principal source of fat for cooking, >3 tablespoons of olive oil/day, \u22652 serving/day of vegetables, \u22653 servings/day of fruit, <1 serving/day of red meat, <1 serving/day of butter or margarine, <1 serving/day of sugar-sweetened beverages, \u22651 cup/day of wine, \u22653 servings/week of legumes, \u22653 servings/week of fish, <2 servings/week of commercial pastry, \u22653 servings/week of nuts), and two additional items with targets for consumption habits characteristic of the Mediterranean diet in Spain: preference for white meat over red meat, and \u22652 times/week consumption of dishes with sofrito (a tomato sauce with garlic, onion, or leeks saut\u00e9ed in olive oil). A value of +1 was assigned to each target achieved. A higher score indicates better Mediterranean diet adherence (range 0\u201314).', 'bb31a69f-45b9-4dfe-b6ca-0da309277c48'])"
+        },
+        {
+            "Foods to avoid": "commercial pastries",
+            "source": "diet_data/mediterranean diet/25789820.csv_methods3 (content: ['6', 'methods3', ' Twelve of them with food consumption targets (olive oil as the principal source of fat for cooking, >3 tablespoons of olive oil/day, \u22652 serving/day of vegetables, \u22653 servings/day of fruit, <1 serving/day of red meat, <1 serving/day of butter or margarine, <1 serving/day of sugar-sweetened beverages, \u22651 cup/day of wine, \u22653 servings/week of legumes, \u22653 servings/week of fish, <2 servings/week of commercial pastry, \u22653 servings/week of nuts), and two additional items with targets for consumption habits characteristic of the Mediterranean diet in Spain: preference for white meat over red meat, and \u22652 times/week consumption of dishes with sofrito (a tomato sauce with garlic, onion, or leeks saut\u00e9ed in olive oil). A value of +1 was assigned to each target achieved. A higher score indicates better Mediterranean diet adherence (range 0\u201314).', 'bb31a69f-45b9-4dfe-b6ca-0da309277c48'])"
+        }
+    ],
+    "Macros: Percent of Fat": [
+        {
+            "Macros: Percent of Fat": "30-35%",
+            "source": "diet_data/mediterranean diet/32078938.csv_methods4 (content: ['4', 'methods4', '  (2) The Mediterranean Diet\u2013high meal frequency (MD-HMF) group, which was instructed to adhere to a Mediterranean Diet based on a distribution of macronutrients of 30%\u201335% fat (mainly mono- and poly-unsaturated fatty acids from extra virgin olive oil, nuts, and omega-3 containing foods), 25% protein (mainly from vegetable sources), and 40%\u201345% carbohydrates (50%\u201370% of the total carbohydrate intake should low on glycaemic index and rich in fiber). This diet was previously observed to reduce fat mass and overall weight and improve general oxidative stress in patients with the metabolic syndrome [16], providing high Total Antioxidant Capacity (Total Antioxidant Capacity (TAC)), and focused on the chronological distribution of meals, as factors, such as meal frequency and distribution could aid in reducing the feeling of hunger, thus improving compliance to an energy restricted dietary regime [17].', '931f94d8-43e1-47f6-9bf2-6a4388e92fc1'])"
+        }
+    ],
+    "Percent of Protein": [
+        {
+            "Percent of Protein": "15-20%",
+            "source": "diet_data/mediterranean diet/34821982.csv_methods4 (content: ['4', 'methods4', ' Ltd., South Korea).  Mediterranean diet  Based on an updated systematic review of the core compositional elements of a Mediterranean diet14, the study required patients in the MD group to consume 15\u201320% protein (low-fat dairy, poultry, fish, legumes, nuts, red meat) in their daily food intake, 45\u201350% carbohydrates (vegetables, fruits, whole grains), and 25\u201335% fat (especially from olive oil). In this MD, the daily minimum requirements of vitamins and minerals were expected to be included with the food and beverage selections; therefore, supplements were not added.  Diet follow-up  Demographic information, anthropometric and biochemical measurements, liver size, and gastrointestinal issues were assessed carefully before and after the diet. An interview was conducted at the hospital outpatient clinic to evaluate the nutritional status of the patients in detail on the 7th and the 15th days after the start of the study.', '6d059142-d366-4834-8769-3f0153a1a69b'])"
+        }
+    ],
+    "Percent of Carbs": [
+        {
+            "Percent of Carbs": "50-55%",
+            "source": "diet_data/mediterranean diet/32325366.csv_methods1 (content: ['1', 'methods1', ' Intervention  Subjects were evaluated at baseline (T0) and after 12 months (T12) of a lifestyle intervention program. A trained pediatric endocrinologist and a nutritionist assessed the habitual diet and administered an isocaloric Mediterranean balanced diet (50\u201355% carbohydrates with less than 12% of sugars; 16\u201317% proteins; 28\u201332% fats with less than 10% saturated fats; fibers 8.5 g/1000 Kcal) according to Italian la Popolazione Italiana (LARN) Guidelines for age and gender [8]. Mediterranean food pyramid was explained together with the diet [9]. Two or more servings of fish and legumes per week and five of raw or cooked vegetables and fruits per day were recommended. Daily intake of nuts and extra-virgin olive oil was suggested, whereas that of processed foods, bakery, candies, trans-fats, and sugars was discouraged. Pictures of dishes were presented on booklets to each subject and their parents to educate to portion size and Kilocalories.', '0e852578-07ac-41cf-a7a4-4d04913737e9'])"
+        }
+    ]
+}
