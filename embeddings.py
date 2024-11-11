@@ -97,7 +97,7 @@ def query_embeddings(chroma_path: Path, query: str, top_k: int = 50) -> list[Doc
 
     # Retrieving the context from the DB using similarity search
     relevant_documents = db.similarity_search_with_relevance_scores(query, k=top_k)
-    return relevant_documents
+    return [doc for doc, _ in relevant_documents]
 
 
 if __name__ == "__main__":
